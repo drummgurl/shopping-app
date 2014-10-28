@@ -119,7 +119,7 @@ li {
 
 .done {
 	text-decoration: line-through;
-	color: #CFBEB4;
+	color: red;
 }
 
 .finished {

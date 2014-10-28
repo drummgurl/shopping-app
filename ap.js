@@ -1,6 +1,9 @@
 $(document).ready(function() {
+	$('form').on('submit', function(event)) {
+		event.preventDefault();
 	$('#input').keyup(function(e){
         if(e.which == 13) {//Enter key pressed
+        event.preventDefault();
         post();
   		}
 	});
@@ -19,7 +22,7 @@ $(document).ready(function() {
 
 	$(document).on('click', '.bought', function(event) {
 		var el = $(event.target);
-		el.parent().toggleClass();
+		el.parent().toggleClass('.done');
 	});
 
 
